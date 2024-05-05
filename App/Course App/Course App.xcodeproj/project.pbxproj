@@ -14,7 +14,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FA3F58C52BE149D30062769F /* Struct,Classes.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Struct,Classes.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FA72F5422BDC18DB00A7C1AD /* Course App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Course App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA72F5452BDC18DB00A7C1AD /* Course_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course_AppApp.swift; sourceTree = "<group>"; };
 		FA72F5472BDC18DB00A7C1AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,14 +32,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FA3F58C42BE149B90062769F /* Playgrounds */ = {
-			isa = PBXGroup;
-			children = (
-				FA3F58C52BE149D30062769F /* Struct,Classes.playground */,
-			);
-			path = Playgrounds;
-			sourceTree = "<group>";
-		};
 		FA72F5392BDC18DB00A7C1AD = {
 			isa = PBXGroup;
 			children = (
@@ -60,7 +51,6 @@
 		FA72F5442BDC18DB00A7C1AD /* Course App */ = {
 			isa = PBXGroup;
 			children = (
-				FA3F58C42BE149B90062769F /* Playgrounds */,
 				FA72F5452BDC18DB00A7C1AD /* Course_AppApp.swift */,
 				FA72F5472BDC18DB00A7C1AD /* ContentView.swift */,
 				FA72F5492BDC18DD00A7C1AD /* Assets.xcassets */,
