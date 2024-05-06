@@ -19,6 +19,8 @@
 		FA72F5472BDC18DB00A7C1AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FA72F5492BDC18DD00A7C1AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA72F54C2BDC18DD00A7C1AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FA8A07F42BE8D07A00F174B9 /* SomeAny.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SomeAny.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FA8A07F62BE9189400F174B9 /* 2. homework.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "2. homework.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,8 @@
 			children = (
 				FA72F5452BDC18DB00A7C1AD /* Course_AppApp.swift */,
 				FA72F5472BDC18DB00A7C1AD /* ContentView.swift */,
+				FA8A07F32BE8D06000F174B9 /* Playgrounds */,
+				FA8A07F52BE9186400F174B9 /* Homework */,
 				FA72F5492BDC18DD00A7C1AD /* Assets.xcassets */,
 				FA72F54B2BDC18DD00A7C1AD /* Preview Content */,
 			);
@@ -65,6 +69,22 @@
 				FA72F54C2BDC18DD00A7C1AD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FA8A07F32BE8D06000F174B9 /* Playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				FA8A07F42BE8D07A00F174B9 /* SomeAny.playground */,
+			);
+			path = Playgrounds;
+			sourceTree = "<group>";
+		};
+		FA8A07F52BE9186400F174B9 /* Homework */ = {
+			isa = PBXGroup;
+			children = (
+				FA8A07F62BE9189400F174B9 /* 2. homework.playground */,
+			);
+			path = Homework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
