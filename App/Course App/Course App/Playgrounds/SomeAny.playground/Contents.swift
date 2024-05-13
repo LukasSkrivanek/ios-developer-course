@@ -1,4 +1,5 @@
 import Foundation
+import SwiftUI
 
 // Some (Opague return Types)
 func getData() -> some Collection{
@@ -33,6 +34,46 @@ protocol Networking{
     func fetchData(at url: URL, completion: @escaping (Result<Data, Error>) -> Void)
 }
 
+
+
+
+protocol StorageMechanism {
+    associatedtype TypeOfStorage
+}
+
+//func implementingStorageFirst(_ mechanism: StorageMechanism) {
+    // ❌ Will not compile since StorageMechanism
+    //    has associatedtype defined inside it
+//}
+
+func implementingStorageSecond<T: StorageMechanism>(_ mechanism: T) {
+    // ✅ Will Compile since we are now using generics
+}
+
+func implementingStorageThird(_ mechanism: some StorageMechanism) {
+    // ✅ Will Compile since we are now using some keyword
+}
+
+
+// 1. ❌ Will not compile
+//var var1: View = Text("Sample Text")
+
+// 2. ✅ Will compile
+var var2: some View = Text("Sample Text")
+
+// 3. ✅ Will Compile
+var var3: any View = Text("Sample Text")
+
+
+
+// 1. ✅ Will compile
+var var4: [some View] = [ Text("Sample Text"), Text("Sample Text") ]
+
+// 2. ❌ Will not compile
+//var var5: [some View] = [ Text("Sample Text"), Label("Sample Text", systemImage: "bolt.fill") ]
+
+// 3. ✅ Will Compile
+var var6: [any View] = [ Text("Sample Text"), Label("Sample Text", systemImage: "bolt.fill") ]
 //1st syntax
 // has worse performance than the second syntax
 // only thing the compiler knows is that the argument networking will
@@ -70,6 +111,5 @@ func load<N: Networking>(_ networking: N){
     }
 }
 
-// typealias
 
-// creating new name for existing type
+let number: Float = 4

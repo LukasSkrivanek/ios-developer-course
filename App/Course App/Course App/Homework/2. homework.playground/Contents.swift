@@ -57,13 +57,17 @@ protocol AnalyticsService {
 }
 
 class ConsoleAnalyticsService: AnalyticsService {
-    private var loggedEvents: [String] = []
+    private var loggedEvents: [any AnalyticEvent] = []
     
     func logEvent<Event: AnalyticEvent>(_ event: Event) {
         let eventName = event.name
         print(eventName)
-        loggedEvents.append(eventName)
+        getLoggedEvents()
     }
+    
+    func getLoggedEvents() -> [any AnalyticEvent] {
+            return loggedEvents
+        }
 }
 
 // Example usage:
