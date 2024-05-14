@@ -16,7 +16,7 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, world!")
-                .font(.custom("Poppins-Regular", size: 24))
+                .font(.custom("Poppins-Bold", size: 24))
         }
         .onAppear {
             self.logViewAppearance()
