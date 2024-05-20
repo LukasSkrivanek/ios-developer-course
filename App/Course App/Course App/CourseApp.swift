@@ -10,12 +10,23 @@ import FirebaseCore
 
 @main
 struct CourseApp: App {
+    let isUIKit = true
     init() {
         FirebaseApp.configure()
     }
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
+    }
+}
+
+
+struct HomeView: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> HomeViewController {
+        HomeViewController()
+    }
+
+    func updateUIViewController(_ uiViewController: HomeViewController, context: Context) {
     }
 }

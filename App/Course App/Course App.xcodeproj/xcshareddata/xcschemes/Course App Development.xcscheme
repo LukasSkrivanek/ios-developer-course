@@ -52,6 +52,17 @@
                ReferencedContainer = "container:Course App.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "FA3CA7572BFA7A0100A82119"
+               BuildableName = "App Course DevUITests.xctest"
+               BlueprintName = "App Course DevUITests"
+               ReferencedContainer = "container:Course App.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
