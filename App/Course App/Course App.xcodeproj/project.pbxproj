@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA3CA75B2BFA7A0100A82119 /* App_Course_DevUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3CA75A2BFA7A0100A82119 /* App_Course_DevUITests.swift */; };
-		FA3CA75D2BFA7A0100A82119 /* App_Course_DevUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3CA75C2BFA7A0100A82119 /* App_Course_DevUITestsLaunchTests.swift */; };
+		FA09EEA72BFC8CE5008B0273 /* SwipingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA09EEA62BFC8CE5008B0273 /* SwipingView.swift */; };
+		FA09EEC32BFC9BA5008B0273 /* SwipingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA09EEC22BFC9BA5008B0273 /* SwipingCard.swift */; };
+		FA09EEC82BFCC7C2008B0273 /* ScratchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA09EEC72BFCC7C2008B0273 /* ScratchView.swift */; };
+		FA09EECA2BFCDD92008B0273 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA09EEC92BFCDD92008B0273 /* MainTabBarController.swift */; };
 		FA57F11F2BF7F892002659E1 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA57F11E2BF7F892002659E1 /* Colors.xcassets */; };
 		FA57F1222BF7FAA1002659E1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA57F1202BF7FAA1002659E1 /* HomeViewController.swift */; };
 		FA57F1282BF8065D002659E1 /* MockDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA57F1272BF8065D002659E1 /* MockDataProvider.swift */; };
@@ -21,10 +23,13 @@
 		FA72F5482BDC18DB00A7C1AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72F5472BDC18DB00A7C1AD /* ContentView.swift */; };
 		FA72F54A2BDC18DD00A7C1AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA72F5492BDC18DD00A7C1AD /* Images.xcassets */; };
 		FA72F54D2BDC18DD00A7C1AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA72F54C2BDC18DD00A7C1AD /* Preview Assets.xcassets */; };
-		FAC200052BF35FCC0036BDAD /* App_Course_UnitDevTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC200042BF35FCC0036BDAD /* App_Course_UnitDevTests.swift */; };
 		FAC2FFEC2BF35F810036BDAD /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAE2054D2BF14E6600D1FB4F /* Poppins-Bold.ttf */; };
 		FAC2FFED2BF35F840036BDAD /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAE2054E2BF14E6700D1FB4F /* Poppins-MediumItalic.ttf */; };
 		FAC2FFEE2BF35F860036BDAD /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAE2054F2BF14E6700D1FB4F /* Poppins-Regular.ttf */; };
+		FADF117D2BFB33520067D90F /*  HomeViewSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF117C2BFB33520067D90F /*  HomeViewSwiftUI.swift */; };
+		FADF11C62BFB765F0067D90F /* BorderedModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF11C52BFB765F0067D90F /* BorderedModifier.swift */; };
+		FADF11C82BFB85E30067D90F /* ResizableBordered.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF11C72BFB85E30067D90F /* ResizableBordered.swift */; };
+		FADF11CB2BFB88110067D90F /* SelectableButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF11CA2BFB88110067D90F /* SelectableButtonStyle.swift */; };
 		FAE205532BF1EA7D00D1FB4F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FAE205522BF1EA7D00D1FB4F /* FirebaseAuth */; };
 		FAE205552BF1EA7D00D1FB4F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FAE205542BF1EA7D00D1FB4F /* FirebaseFirestore */; };
 		FAE205572BF1EA7D00D1FB4F /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = FAE205562BF1EA7D00D1FB4F /* FirebaseFirestoreCombine-Community */; };
@@ -32,24 +37,12 @@
 		FAE2055C2BF1ED8A00D1FB4F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAE2055B2BF1ED8A00D1FB4F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		FA3CA75E2BFA7A0100A82119 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FA72F53A2BDC18DB00A7C1AD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FA72F5412BDC18DB00A7C1AD;
-			remoteInfo = "Course App";
-		};
-		FAC200062BF35FCC0036BDAD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FA72F53A2BDC18DB00A7C1AD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FA72F5412BDC18DB00A7C1AD;
-			remoteInfo = "Course App";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		FA09EEA62BFC8CE5008B0273 /* SwipingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingView.swift; sourceTree = "<group>"; };
+		FA09EEC22BFC9BA5008B0273 /* SwipingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingCard.swift; sourceTree = "<group>"; };
+		FA09EEC62BFCBB18008B0273 /* App Course Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "App Course Dev.app"; path = "/Users/macbook/Documents/ios-developer-course/App/Course App/build/Debug Development-iphoneos/App Course Dev.app"; sourceTree = "<absolute>"; };
+		FA09EEC72BFCC7C2008B0273 /* ScratchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchView.swift; sourceTree = "<group>"; };
+		FA09EEC92BFCDD92008B0273 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		FA3CA75A2BFA7A0100A82119 /* App_Course_DevUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App_Course_DevUITests.swift; sourceTree = "<group>"; };
 		FA3CA75C2BFA7A0100A82119 /* App_Course_DevUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App_Course_DevUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FA57F11E2BF7F892002659E1 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -67,12 +60,13 @@
 		FA72F54C2BDC18DD00A7C1AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FA8A07F42BE8D07A00F174B9 /* SomeAny.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SomeAny.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FA8A07F62BE9189400F174B9 /* 2. homework.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "2. homework.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		FAA9FC3E2BFA920C00178CE0 /* App Course Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "App Course Dev.app"; path = "/Users/macbook/Documents/ios-developer-course/App/Course App/build/Debug Development-iphoneos/App Course Dev.app"; sourceTree = "<absolute>"; };
-		FAA9FC3F2BFA920C00178CE0 /* App Course UnitDevTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "App Course UnitDevTests.xctest"; path = "/Users/macbook/Documents/ios-developer-course/App/Course App/build/Debug Development-iphoneos/App Course Dev.app/PlugIns/App Course UnitDevTests.xctest"; sourceTree = "<absolute>"; };
-		FAA9FC402BFA920C00178CE0 /* App Course DevUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "App Course DevUITests.xctest"; path = "/Users/macbook/Documents/ios-developer-course/App/Course App/build/Debug Development-iphoneos/App Course DevUITests-Runner.app/PlugIns/App Course DevUITests.xctest"; sourceTree = "<absolute>"; };
 		FAB98AFD2BF0FE1F000EC60E /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		FAB98AFE2BF104BB000EC60E /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		FAC200042BF35FCC0036BDAD /* App_Course_UnitDevTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App_Course_UnitDevTests.swift; sourceTree = "<group>"; };
+		FADF117C2BFB33520067D90F /*  HomeViewSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " HomeViewSwiftUI.swift"; sourceTree = "<group>"; };
+		FADF11C52BFB765F0067D90F /* BorderedModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedModifier.swift; sourceTree = "<group>"; };
+		FADF11C72BFB85E30067D90F /* ResizableBordered.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizableBordered.swift; sourceTree = "<group>"; };
+		FADF11CA2BFB88110067D90F /* SelectableButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableButtonStyle.swift; sourceTree = "<group>"; };
 		FAE2054D2BF14E6600D1FB4F /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		FAE2054E2BF14E6700D1FB4F /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
 		FAE2054F2BF14E6700D1FB4F /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
@@ -81,13 +75,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FA3CA7552BFA7A0100A82119 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		FA72F53F2BDC18DB00A7C1AD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -96,13 +83,6 @@
 				FAE205532BF1EA7D00D1FB4F /* FirebaseAuth in Frameworks */,
 				FAE205552BF1EA7D00D1FB4F /* FirebaseFirestore in Frameworks */,
 				FAE205592BF1EA7D00D1FB4F /* FirebaseFirestoreSwift in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAC2FFFF2BF35FCC0036BDAD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +132,10 @@
 			isa = PBXGroup;
 			children = (
 				FA72F5472BDC18DB00A7C1AD /* ContentView.swift */,
+				FADF117C2BFB33520067D90F /*  HomeViewSwiftUI.swift */,
+				FA09EEA62BFC8CE5008B0273 /* SwipingView.swift */,
+				FA09EEC22BFC9BA5008B0273 /* SwipingCard.swift */,
+				FA09EEC72BFCC7C2008B0273 /* ScratchView.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -197,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				FA72F5452BDC18DB00A7C1AD /* CourseApp.swift */,
+				FADF11C32BFB74500067D90F /* SharedUI */,
 				FA57F11C2BF7F765002659E1 /* Views */,
 				FAE205502BF1524E00D1FB4F /* Course-App-Info.plist */,
 				FAE2055B2BF1ED8A00D1FB4F /* GoogleService-Info.plist */,
@@ -256,31 +241,40 @@
 			children = (
 				FA57F1202BF7FAA1002659E1 /* HomeViewController.swift */,
 				FA57F1292BF8099A002659E1 /* UICollectionViewCells */,
+				FA09EEC92BFCDD92008B0273 /* MainTabBarController.swift */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		FADF11C32BFB74500067D90F /* SharedUI */ = {
+			isa = PBXGroup;
+			children = (
+				FADF11C92BFB87E10067D90F /* Styles */,
+				FADF11C42BFB76450067D90F /* ViewModifiers */,
+			);
+			path = SharedUI;
+			sourceTree = "<group>";
+		};
+		FADF11C42BFB76450067D90F /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				FADF11C52BFB765F0067D90F /* BorderedModifier.swift */,
+				FADF11C72BFB85E30067D90F /* ResizableBordered.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		FADF11C92BFB87E10067D90F /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				FADF11CA2BFB88110067D90F /* SelectableButtonStyle.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FA3CA7572BFA7A0100A82119 /* App Course DevUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FA3CA7602BFA7A0100A82119 /* Build configuration list for PBXNativeTarget "App Course DevUITests" */;
-			buildPhases = (
-				FA3CA7542BFA7A0100A82119 /* Sources */,
-				FA3CA7552BFA7A0100A82119 /* Frameworks */,
-				FA3CA7562BFA7A0100A82119 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FA3CA75F2BFA7A0100A82119 /* PBXTargetDependency */,
-			);
-			name = "App Course DevUITests";
-			productName = "App Course DevUITests";
-			productReference = FAA9FC402BFA920C00178CE0 /* App Course DevUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		FA72F5412BDC18DB00A7C1AD /* Course App */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA72F5502BDC18DD00A7C1AD /* Build configuration list for PBXNativeTarget "Course App" */;
@@ -292,6 +286,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				FA09EECC2BFCF811008B0273 /* PBXTargetDependency */,
 			);
 			name = "Course App";
 			packageProductDependencies = (
@@ -301,26 +296,8 @@
 				FAE205582BF1EA7D00D1FB4F /* FirebaseFirestoreSwift */,
 			);
 			productName = "Course App";
-			productReference = FAA9FC3E2BFA920C00178CE0 /* App Course Dev.app */;
+			productReference = FA09EEC62BFCBB18008B0273 /* App Course Dev.app */;
 			productType = "com.apple.product-type.application";
-		};
-		FAC200012BF35FCC0036BDAD /* App Course UnitDevTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FAC200082BF35FCC0036BDAD /* Build configuration list for PBXNativeTarget "App Course UnitDevTests" */;
-			buildPhases = (
-				FAC2FFFE2BF35FCC0036BDAD /* Sources */,
-				FAC2FFFF2BF35FCC0036BDAD /* Frameworks */,
-				FAC200002BF35FCC0036BDAD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FAC200072BF35FCC0036BDAD /* PBXTargetDependency */,
-			);
-			name = "App Course UnitDevTests";
-			productName = "App Course UnitDevTests";
-			productReference = FAA9FC3F2BFA920C00178CE0 /* App Course UnitDevTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -330,18 +307,10 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1530;
-				LastUpgradeCheck = 1530;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
-					FA3CA7572BFA7A0100A82119 = {
-						CreatedOnToolsVersion = 15.3;
-						TestTargetID = FA72F5412BDC18DB00A7C1AD;
-					};
 					FA72F5412BDC18DB00A7C1AD = {
 						CreatedOnToolsVersion = 15.3;
-					};
-					FAC200012BF35FCC0036BDAD = {
-						CreatedOnToolsVersion = 15.3;
-						TestTargetID = FA72F5412BDC18DB00A7C1AD;
 					};
 				};
 			};
@@ -363,20 +332,11 @@
 			projectRoot = "";
 			targets = (
 				FA72F5412BDC18DB00A7C1AD /* Course App */,
-				FAC200012BF35FCC0036BDAD /* App Course UnitDevTests */,
-				FA3CA7572BFA7A0100A82119 /* App Course DevUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FA3CA7562BFA7A0100A82119 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		FA72F5402BDC18DB00A7C1AD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -391,25 +351,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FAC200002BF35FCC0036BDAD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FA3CA7542BFA7A0100A82119 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FA3CA75B2BFA7A0100A82119 /* App_Course_DevUITests.swift in Sources */,
-				FA3CA75D2BFA7A0100A82119 /* App_Course_DevUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		FA72F53E2BDC18DB00A7C1AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -419,319 +363,31 @@
 				FA57F1302BF80EB4002659E1 /* UICollectionView+ReusableIdentifier.swift in Sources */,
 				FA72F5482BDC18DB00A7C1AD /* ContentView.swift in Sources */,
 				FA57F1282BF8065D002659E1 /* MockDataProvider.swift in Sources */,
+				FA09EEC32BFC9BA5008B0273 /* SwipingCard.swift in Sources */,
 				FA57F12B2BF809C9002659E1 /* LabelCollectionViewCell.swift in Sources */,
+				FADF11C62BFB765F0067D90F /* BorderedModifier.swift in Sources */,
 				FA57F1322BF88219002659E1 /* ImageCollectionViewCell.swift in Sources */,
 				FA57F1222BF7FAA1002659E1 /* HomeViewController.swift in Sources */,
+				FA09EEA72BFC8CE5008B0273 /* SwipingView.swift in Sources */,
+				FADF117D2BFB33520067D90F /*  HomeViewSwiftUI.swift in Sources */,
+				FADF11CB2BFB88110067D90F /* SelectableButtonStyle.swift in Sources */,
+				FADF11C82BFB85E30067D90F /* ResizableBordered.swift in Sources */,
 				FA72F5462BDC18DB00A7C1AD /* CourseApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAC2FFFE2BF35FCC0036BDAD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FAC200052BF35FCC0036BDAD /* App_Course_UnitDevTests.swift in Sources */,
+				FA09EEC82BFCC7C2008B0273 /* ScratchView.swift in Sources */,
+				FA09EECA2BFCDD92008B0273 /* MainTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		FA3CA75F2BFA7A0100A82119 /* PBXTargetDependency */ = {
+		FA09EECC2BFCF811008B0273 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FA72F5412BDC18DB00A7C1AD /* Course App */;
-			targetProxy = FA3CA75E2BFA7A0100A82119 /* PBXContainerItemProxy */;
-		};
-		FAC200072BF35FCC0036BDAD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FA72F5412BDC18DB00A7C1AD /* Course App */;
-			targetProxy = FAC200062BF35FCC0036BDAD /* PBXContainerItemProxy */;
+			productRef = FA09EECB2BFCF811008B0273 /* SwiftLintBuildToolPlugin */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		FA3CA7612BFA7A0100A82119 /* Debug Development */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 57FHRQVBLR;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "luky.skrivos.course.app.App-Course-DevUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Course App";
-			};
-			name = "Debug Development";
-		};
-		FA3CA7622BFA7A0100A82119 /* Debug Production */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 57FHRQVBLR;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "luky.skrivos.course.app.App-Course-DevUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Course App";
-			};
-			name = "Debug Production";
-		};
-		FA3CA7632BFA7A0100A82119 /* Release Development */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 57FHRQVBLR;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "luky.skrivos.course.app.App-Course-DevUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Course App";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = "Release Development";
-		};
-		FA3CA7642BFA7A0100A82119 /* Release Production */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 57FHRQVBLR;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "luky.skrivos.course.app.App-Course-DevUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Course App";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = "Release Production";
-		};
 		FA72F54E2BDC18DD00A7C1AD /* Debug Development */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FAB98AFD2BF0FE1F000EC60E /* Development.xcconfig */;
@@ -834,6 +490,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -847,6 +504,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
@@ -1090,306 +748,9 @@
 			};
 			name = "Release Production";
 		};
-		FAC200092BF35FCC0036BDAD /* Debug Development */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 57FHRQVBLR;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "luky.skrivos.course.app.App-Course-UnitDevTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/App Course Dev.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/App Course Dev";
-			};
-			name = "Debug Development";
-		};
-		FAC2000A2BF35FCC0036BDAD /* Debug Production */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 57FHRQVBLR;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "luky.skrivos.course.app.App-Course-UnitDevTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/App Course Dev.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/App Course Dev";
-			};
-			name = "Debug Production";
-		};
-		FAC2000B2BF35FCC0036BDAD /* Release Development */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 57FHRQVBLR;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "luky.skrivos.course.app.App-Course-UnitDevTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/App Course Dev.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/App Course Dev";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = "Release Development";
-		};
-		FAC2000C2BF35FCC0036BDAD /* Release Production */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 57FHRQVBLR;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "luky.skrivos.course.app.App-Course-UnitDevTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/App Course Dev.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/App Course Dev";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = "Release Production";
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FA3CA7602BFA7A0100A82119 /* Build configuration list for PBXNativeTarget "App Course DevUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FA3CA7612BFA7A0100A82119 /* Debug Development */,
-				FA3CA7622BFA7A0100A82119 /* Debug Production */,
-				FA3CA7632BFA7A0100A82119 /* Release Development */,
-				FA3CA7642BFA7A0100A82119 /* Release Production */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Release Development";
-		};
 		FA72F53D2BDC18DB00A7C1AD /* Build configuration list for PBXProject "Course App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1408,17 +769,6 @@
 				FAB98B002BF1075A000EC60E /* Debug Production */,
 				FA72F5522BDC18DD00A7C1AD /* Release Development */,
 				FAB98B022BF1076C000EC60E /* Release Production */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Release Development";
-		};
-		FAC200082BF35FCC0036BDAD /* Build configuration list for PBXNativeTarget "App Course UnitDevTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FAC200092BF35FCC0036BDAD /* Debug Development */,
-				FAC2000A2BF35FCC0036BDAD /* Debug Production */,
-				FAC2000B2BF35FCC0036BDAD /* Release Development */,
-				FAC2000C2BF35FCC0036BDAD /* Release Production */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "Release Development";
@@ -1445,6 +795,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		FA09EECB2BFCF811008B0273 /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAB98B032BF12C20000EC60E /* XCRemoteSwiftPackageReference "SwiftLint" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
 		FAE205522BF1EA7D00D1FB4F /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FAE205512BF1EA7C00D1FB4F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

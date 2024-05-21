@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class ImageCollectionViewCell: UICollectionViewCell, ReusableIdentifier {
+final class ImageCollectionViewCell: UICollectionViewCell {
     // MARK: UI items
     let imageView: UIImageView = {
         let imageView = UIImageView()
@@ -44,7 +44,7 @@ private extension ImageCollectionViewCell {
             imageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 5),
             imageView.topAnchor.constraint(equalTo: topAnchor, constant: 5),
             imageView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -5),
-            imageView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -5),
+            imageView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -5)
         ])
     }
 }

@@ -7,24 +7,23 @@
 import UIKit
 import Combine
 import SwiftUI
-
+// swiftlint:disable force_cast
 final class HomeViewController: UIViewController {
-    private var categoriesCollectionView: UICollectionView!
-
+    private lazy var categoriesCollectionView: UICollectionView = UICollectionView(
+        frame: .zero,
+        collectionViewLayout: UICollectionViewFlowLayout()
+    )
     // MARK: DataSource
     private lazy var dataProvider = MockDataProvider()
     typealias DataSource = UICollectionViewDiffableDataSource<SectionData, Joke>
     typealias Snapshot = NSDiffableDataSourceSnapshot<SectionData, Joke>
-
     private lazy var dataSource = makeDataSource()
     private lazy var cancellables = Set<AnyCancellable>()
-
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
     }
 }
-
 // MARK: - UICollectionViewDataSource
 private extension HomeViewController {
     func readData() {
@@ -34,43 +33,43 @@ private extension HomeViewController {
         }
         .store(in: &cancellables)
     }
-
     func applySnapshot(data: [SectionData], animatingDifferences: Bool = true) {
         guard dataSource.snapshot().numberOfSections == 0 else {
             let snapshot = dataSource.snapshot()
             dataSource.apply(snapshot, animatingDifferences: animatingDifferences)
             return
         }
-
         var snapshot = Snapshot()
         snapshot.appendSections(data)
-
         data.forEach { section in
             snapshot.appendItems(section.jokes, toSection: section)
         }
-
         dataSource.apply(snapshot, animatingDifferences: animatingDifferences)
     }
-
     func makeDataSource() -> DataSource {
-        let dataSource = DataSource(collectionView: categoriesCollectionView) { collectionView, indexPath, joke in
+        let dataSource = DataSource(collectionView: categoriesCollectionView) { collectionView, indexPath, _ in
             let section = self.dataSource.snapshot().sectionIdentifiers[indexPath.section]
-            let horizontalCell: HorizontalScrollingCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: HorizontalScrollingCollectionViewCell.self), for: indexPath) as! HorizontalScrollingCollectionViewCell
+            let horizontalCell: HorizontalScrollingCollectionViewCell = collectionView.dequeueReusableCell(
+                withReuseIdentifier: String(
+                    describing: HorizontalScrollingCollectionViewCell.self)
+                , for: indexPath) as! HorizontalScrollingCollectionViewCell
             horizontalCell.images = section.jokes.map { $0.image }
             return horizontalCell
         }
-
         dataSource.supplementaryViewProvider = { collectionView, kind, indexPath in
             guard kind == UICollectionView.elementKindSectionHeader else {
                 return nil
             }
-
             let section = self.dataSource.snapshot().sectionIdentifiers[indexPath.section]
-            let labelCell: LabelCollectionViewCell = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: String(describing: LabelCollectionViewCell.self), for: indexPath) as! LabelCollectionViewCell
+            let labelCell: LabelCollectionViewCell
+            = collectionView.dequeueReusableSupplementaryView(
+                ofKind: kind,
+                withReuseIdentifier: String(
+                    describing: LabelCollectionViewCell.self),
+                for: indexPath) as! LabelCollectionViewCell
             labelCell.nameLabel.text = section.title
             return labelCell
         }
-
         return dataSource
     }
 }
@@ -80,8 +79,8 @@ extension HomeViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("I have tapped \(indexPath)")
     }
-
-    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+    func collectionView(_ collectionView: UICollectionView,
+                        willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         print("will display \(indexPath)")
     }
 }
@@ -92,7 +91,6 @@ private extension HomeViewController {
         setupCollectionView()
         readData()
     }
-
     func setupCollectionView() {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
@@ -102,7 +100,6 @@ private extension HomeViewController {
         layout.sectionHeadersPinToVisibleBounds = true
         layout.headerReferenceSize = CGSize(width: view.bounds.width, height: 30)
         layout.itemSize = CGSize(width: view.bounds.width, height: view.bounds.height / 3)
-
         categoriesCollectionView = UICollectionView(frame: view.bounds, collectionViewLayout: layout)
         categoriesCollectionView.backgroundColor = .gray
         categoriesCollectionView.isPagingEnabled = true
@@ -110,9 +107,12 @@ private extension HomeViewController {
         categoriesCollectionView.showsVerticalScrollIndicator = false
         categoriesCollectionView.delegate = self
         categoriesCollectionView.dataSource = dataSource
-        categoriesCollectionView.register(HorizontalScrollingCollectionViewCell.self, forCellWithReuseIdentifier: String(describing: HorizontalScrollingCollectionViewCell.self))
-        categoriesCollectionView.register(LabelCollectionViewCell.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: String(describing: LabelCollectionViewCell.self))
-
+        categoriesCollectionView.register(
+            HorizontalScrollingCollectionViewCell.self,
+            forCellWithReuseIdentifier: String(describing: HorizontalScrollingCollectionViewCell.self))
+        categoriesCollectionView.register(LabelCollectionViewCell.self
+                                          , forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader
+                                          , withReuseIdentifier: String(describing: LabelCollectionViewCell.self))
         view.addSubview(categoriesCollectionView)
     }
 }

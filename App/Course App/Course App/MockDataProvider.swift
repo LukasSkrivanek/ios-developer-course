@@ -13,13 +13,13 @@ let mockImages = [
     UIImage.food
 ]
 
-struct SectionData: Identifiable, Hashable{
+struct SectionData: Identifiable, Hashable {
     let id = UUID()
     let title: String
     var jokes: [Joke]
 }
 
-struct Joke: Identifiable, Hashable{
+struct Joke: Identifiable, Hashable {
     let id = UUID()
     let text: String
     let image = mockImages.randomElement()
@@ -27,27 +27,25 @@ struct Joke: Identifiable, Hashable{
 
 final class MockDataProvider: ObservableObject {
     @Published var data: [SectionData]
-    
     // MARK: Data
     private var localData = [
         SectionData(title: "Celebrations", jokes: [
             Joke(text: "Why don't eggs tell jokes? They'd crack up."),
             Joke(text: "What do you call a bear with no teeth? A gummy bear."),
-            Joke(text: "Why did the bicycle fall over? It was two-tired."),
+            Joke(text: "Why did the bicycle fall over? It was two-tired.")
         ])
     ]
-    
     init() {
         data = localData
-        //updateData()
+      // updateData()
     }
 }
 
 // MARK: - Private methods
-private extension MockDataProvider{
+private extension MockDataProvider {
     func  updateData() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 4, execute: {
-            if var section = self.localData.first{
+            if var section = self.localData.first {
                 section.jokes.remove(at: 1)
                 self.data = [section]
             }
