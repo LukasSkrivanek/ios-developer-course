@@ -34,10 +34,9 @@ private extension HorizontalScrollingCollectionViewCell {
     func setupCollectionView() {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
-        layout.minimumLineSpacing = 5
-        layout.minimumInteritemSpacing =  5
+        layout.minimumLineSpacing = 2
+        layout.minimumInteritemSpacing = 0
         collectionView.backgroundColor = .clear
-        collectionView.isPagingEnabled = true
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.dataSource = self
         collectionView.delegate = self
@@ -75,7 +74,10 @@ extension HorizontalScrollingCollectionViewCell: UICollectionViewDataSource {
         let cell: UICollectionViewCell = collectionView.dequeueReusableCell(for: indexPath)
         cell.contentConfiguration = UIHostingConfiguration {
             Image(uiImage: images[indexPath.row] ?? UIImage())
-                .resizableBordered(cornerRadius: 10)
+                .resizableBordered(cornerRadius: UIConstants.cornerRadius)
+                .aspectRatio(contentMode: .fit)
+                .cornerRadius(UIConstants.cornerRadius)
+                .clipped()
         }
         return cell
     }
@@ -87,7 +89,7 @@ extension HorizontalScrollingCollectionViewCell: UICollectionViewDelegateFlowLay
         _ collectionView: UICollectionView,
         layout collectionViewLayout: UICollectionViewLayout,
         sizeForItemAt indexPath: IndexPath) -> CGSize {
-        CGSize(width: collectionView.bounds.width, height: collectionView.bounds.height)
+        CGSize(width: collectionView.bounds.width - 20, height: collectionView.bounds.height)
     }
 }
 

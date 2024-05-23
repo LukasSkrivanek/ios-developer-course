@@ -35,5 +35,7 @@ struct SwipingView: View {
                 Spacer()
             }
         }
+        .background(.bg)
+        .navigationTitle("Swiping")
     }
 }

@@ -22,6 +22,7 @@ final class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
+        title = "Categories"
     }
 }
 // MARK: - UICollectionViewDataSource
@@ -61,16 +62,34 @@ private extension HomeViewController {
                 return nil
             }
             let section = self.dataSource.snapshot().sectionIdentifiers[indexPath.section]
-            let labelCell: LabelCollectionViewCell
-            = collectionView.dequeueReusableSupplementaryView(
-                ofKind: kind,
-                withReuseIdentifier: String(
-                    describing: LabelCollectionViewCell.self),
-                for: indexPath) as! LabelCollectionViewCell
-            labelCell.nameLabel.text = section.title
-            return labelCell
+            // Vytvoříme vlastní UICollectionReusableView
+               let headerView = collectionView.dequeueReusableSupplementaryView(
+                   ofKind: kind,
+                   withReuseIdentifier: "SectionHeader",
+                   for: indexPath)
+               // Přidáme SwiftUI view do obsahu hlavičky
+               let hostingController = UIHostingController(rootView: SectionHeaderView(title: section.title))
+               headerView.addSubview(hostingController.view)
+               hostingController.view.translatesAutoresizingMaskIntoConstraints = false
+               return headerView
         }
         return dataSource
+    }
+}
+
+extension HomeViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(
+        _ collectionView: UICollectionView,
+        layout collectionViewLayout: UICollectionViewLayout,
+        sizeForItemAt indextPath: IndexPath
+    ) -> CGSize {
+        CGSize(width: collectionView.bounds.width, height: collectionView.bounds.height / 3.4)
+    }
+    func collectionView(
+        _ collectionView: UICollectionView,
+        layout collectionViewLayout: UICollectionViewLayout,
+        referenceSizeForHeaderInSection section: Int) -> CGSize {
+        return CGSize(width: collectionView.bounds.width, height: 50)
     }
 }
 
@@ -94,25 +113,19 @@ private extension HomeViewController {
     func setupCollectionView() {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
-        layout.minimumLineSpacing = 8
-        layout.minimumInteritemSpacing = 10
-        layout.sectionInset = UIEdgeInsets(top: 0, left: 4, bottom: 0, right: 4)
-        layout.sectionHeadersPinToVisibleBounds = true
-        layout.headerReferenceSize = CGSize(width: view.bounds.width, height: 30)
-        layout.itemSize = CGSize(width: view.bounds.width, height: view.bounds.height / 3)
+        layout.sectionHeadersPinToVisibleBounds = false
         categoriesCollectionView = UICollectionView(frame: view.bounds, collectionViewLayout: layout)
-        categoriesCollectionView.backgroundColor = .gray
-        categoriesCollectionView.isPagingEnabled = true
-        categoriesCollectionView.contentInsetAdjustmentBehavior = .never
+        categoriesCollectionView.backgroundColor = .bg
         categoriesCollectionView.showsVerticalScrollIndicator = false
         categoriesCollectionView.delegate = self
         categoriesCollectionView.dataSource = dataSource
-        categoriesCollectionView.register(
+                categoriesCollectionView.register(
             HorizontalScrollingCollectionViewCell.self,
             forCellWithReuseIdentifier: String(describing: HorizontalScrollingCollectionViewCell.self))
-        categoriesCollectionView.register(LabelCollectionViewCell.self
-                                          , forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader
-                                          , withReuseIdentifier: String(describing: LabelCollectionViewCell.self))
+        categoriesCollectionView.register(UICollectionReusableView.self,
+                                          forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
+                                          withReuseIdentifier: "SectionHeader")
+
         view.addSubview(categoriesCollectionView)
     }
 }

@@ -16,21 +16,11 @@ struct CourseApp: App {
     }
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            MainTabView()
+                .ignoresSafeArea(edges: .all)
         }
     }
 }
-
-/*
-@ViewBuilder
-var homeView: some View {
-    if isUIKit {
-        HomeView()
-    } else {
-        //HomeViewSwiftUI()
-    }
-}
-*/
 
 struct HomeView: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> HomeViewController {

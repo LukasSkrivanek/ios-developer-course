@@ -52,7 +52,7 @@ struct SwipingCard: View {
             Spacer()
         }
         .background(color)
-        .cornerRadius(15)
+        .cornerRadius(UIConstants.cornerRadius)
         .offset(x: offset.width, y: offset.height * 0.5)
         .rotationEffect(.degrees(Double(offset.width / 40)))
         .gesture(dragGesture)
@@ -75,11 +75,10 @@ struct SwipingCard: View {
     // MARK: CardDescription
     private var cardDescription: some View {
         Text(configuration.title)
-            .foregroundStyle(.white)
-            .fontWeight(.bold)
+            .textTypeModifier(textType: .h1Title)
             .padding(10)
             .background(.black.opacity(0.5))
-            .cornerRadius(10)
+            .cornerRadius(UIConstants.cornerRadius)
             .padding()
     }
 }
@@ -118,18 +117,3 @@ private extension SwipingCard {
         }
     }
 }
-
-/*
-struct Card_Previews: PreviewProvider {
-    static var previews: some View {
-        SwipingCard(configuration: SwipingCard.Configuration(
-            image: Image("nature"),title: "Card Title",description: """
-                                                             This a short description. This is a short description. This is a short description. This is a short description.
-                                                             """),
-                    swipeStateAction: { _ in}
-        )
-        .previewLayout(.sizeThatFits)
-        .frame(width: 220, height: 340)
-    }
-}
-*/

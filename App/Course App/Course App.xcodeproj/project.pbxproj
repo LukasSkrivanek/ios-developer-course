@@ -23,6 +23,8 @@
 		FA72F5482BDC18DB00A7C1AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72F5472BDC18DB00A7C1AD /* ContentView.swift */; };
 		FA72F54A2BDC18DD00A7C1AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA72F5492BDC18DD00A7C1AD /* Images.xcassets */; };
 		FA72F54D2BDC18DD00A7C1AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA72F54C2BDC18DD00A7C1AD /* Preview Assets.xcassets */; };
+		FA8C37492BFF19CC00A9B4DF /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C37482BFF19CC00A9B4DF /* SectionHeaderView.swift */; };
+		FA8C374B2BFF26A000A9B4DF /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C374A2BFF26A000A9B4DF /* UIConstants.swift */; };
 		FAC2FFEC2BF35F810036BDAD /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAE2054D2BF14E6600D1FB4F /* Poppins-Bold.ttf */; };
 		FAC2FFED2BF35F840036BDAD /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAE2054E2BF14E6700D1FB4F /* Poppins-MediumItalic.ttf */; };
 		FAC2FFEE2BF35F860036BDAD /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAE2054F2BF14E6700D1FB4F /* Poppins-Regular.ttf */; };
@@ -35,12 +37,12 @@
 		FAE205572BF1EA7D00D1FB4F /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = FAE205562BF1EA7D00D1FB4F /* FirebaseFirestoreCombine-Community */; };
 		FAE205592BF1EA7D00D1FB4F /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FAE205582BF1EA7D00D1FB4F /* FirebaseFirestoreSwift */; };
 		FAE2055C2BF1ED8A00D1FB4F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAE2055B2BF1ED8A00D1FB4F /* GoogleService-Info.plist */; };
+		FAE86C022BFDDBA000DC7B26 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE86C012BFDDBA000DC7B26 /* DesignSystem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FA09EEA62BFC8CE5008B0273 /* SwipingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingView.swift; sourceTree = "<group>"; };
 		FA09EEC22BFC9BA5008B0273 /* SwipingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingCard.swift; sourceTree = "<group>"; };
-		FA09EEC62BFCBB18008B0273 /* App Course Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "App Course Dev.app"; path = "/Users/macbook/Documents/ios-developer-course/App/Course App/build/Debug Development-iphoneos/App Course Dev.app"; sourceTree = "<absolute>"; };
 		FA09EEC72BFCC7C2008B0273 /* ScratchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchView.swift; sourceTree = "<group>"; };
 		FA09EEC92BFCDD92008B0273 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		FA3CA75A2BFA7A0100A82119 /* App_Course_DevUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App_Course_DevUITests.swift; sourceTree = "<group>"; };
@@ -60,6 +62,8 @@
 		FA72F54C2BDC18DD00A7C1AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FA8A07F42BE8D07A00F174B9 /* SomeAny.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SomeAny.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FA8A07F62BE9189400F174B9 /* 2. homework.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "2. homework.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FA8C37482BFF19CC00A9B4DF /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		FA8C374A2BFF26A000A9B4DF /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
 		FAB98AFD2BF0FE1F000EC60E /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		FAB98AFE2BF104BB000EC60E /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		FAC200042BF35FCC0036BDAD /* App_Course_UnitDevTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App_Course_UnitDevTests.swift; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 		FAE2054F2BF14E6700D1FB4F /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		FAE205502BF1524E00D1FB4F /* Course-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Course-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 		FAE2055B2BF1ED8A00D1FB4F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FAE86C002BFD20DA00DC7B26 /* App Course Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App Course Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAE86C012BFDDBA000DC7B26 /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +142,7 @@
 				FA09EEA62BFC8CE5008B0273 /* SwipingView.swift */,
 				FA09EEC22BFC9BA5008B0273 /* SwipingCard.swift */,
 				FA09EEC72BFCC7C2008B0273 /* ScratchView.swift */,
+				FA8C37482BFF19CC00A9B4DF /* SectionHeaderView.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -174,6 +181,7 @@
 				FAC200032BF35FCC0036BDAD /* App Course UnitDevTests */,
 				FA3CA7592BFA7A0100A82119 /* App Course DevUITests */,
 				FA57F1242BF801A4002659E1 /* Frameworks */,
+				FAE86C002BFD20DA00DC7B26 /* App Course Dev.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -191,6 +199,8 @@
 				FA8A07F52BE9186400F174B9 /* Homework */,
 				FA72F54B2BDC18DD00A7C1AD /* Preview Content */,
 				FA57F1272BF8065D002659E1 /* MockDataProvider.swift */,
+				FAE86C012BFDDBA000DC7B26 /* DesignSystem.swift */,
+				FA8C374A2BFF26A000A9B4DF /* UIConstants.swift */,
 			);
 			path = "Course App";
 			sourceTree = "<group>";
@@ -240,8 +250,8 @@
 			isa = PBXGroup;
 			children = (
 				FA57F1202BF7FAA1002659E1 /* HomeViewController.swift */,
-				FA57F1292BF8099A002659E1 /* UICollectionViewCells */,
 				FA09EEC92BFCDD92008B0273 /* MainTabBarController.swift */,
+				FA57F1292BF8099A002659E1 /* UICollectionViewCells */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -296,7 +306,7 @@
 				FAE205582BF1EA7D00D1FB4F /* FirebaseFirestoreSwift */,
 			);
 			productName = "Course App";
-			productReference = FA09EEC62BFCBB18008B0273 /* App Course Dev.app */;
+			productReference = FAE86C002BFD20DA00DC7B26 /* App Course Dev.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -365,11 +375,14 @@
 				FA57F1282BF8065D002659E1 /* MockDataProvider.swift in Sources */,
 				FA09EEC32BFC9BA5008B0273 /* SwipingCard.swift in Sources */,
 				FA57F12B2BF809C9002659E1 /* LabelCollectionViewCell.swift in Sources */,
+				FA8C374B2BFF26A000A9B4DF /* UIConstants.swift in Sources */,
 				FADF11C62BFB765F0067D90F /* BorderedModifier.swift in Sources */,
 				FA57F1322BF88219002659E1 /* ImageCollectionViewCell.swift in Sources */,
+				FA8C37492BFF19CC00A9B4DF /* SectionHeaderView.swift in Sources */,
 				FA57F1222BF7FAA1002659E1 /* HomeViewController.swift in Sources */,
 				FA09EEA72BFC8CE5008B0273 /* SwipingView.swift in Sources */,
 				FADF117D2BFB33520067D90F /*  HomeViewSwiftUI.swift in Sources */,
+				FAE86C022BFDDBA000DC7B26 /* DesignSystem.swift in Sources */,
 				FADF11CB2BFB88110067D90F /* SelectableButtonStyle.swift in Sources */,
 				FADF11C82BFB85E30067D90F /* ResizableBordered.swift in Sources */,
 				FA72F5462BDC18DB00A7C1AD /* CourseApp.swift in Sources */,

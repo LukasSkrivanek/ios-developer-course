@@ -23,7 +23,7 @@ struct HomeViewSwiftUI: View {
                             if let uiImage = joke.image {
                                 ZStack(alignment: .bottomLeading) {
                                     Image(uiImage: uiImage)
-                                        .resizableBordered(cornerRadius: 10)
+                                        .resizableBordered(cornerRadius: UIConstants.cornerRadius)
                                         .onTapGesture {
                                             print("Tapped joke \(joke)")
                                         }
@@ -32,7 +32,7 @@ struct HomeViewSwiftUI: View {
                             } else {
                                 Rectangle()
                                     .fill(Color.gray)
-                                    .cornerRadius(10)
+                                    .cornerRadius(UIConstants.cornerRadius)
                                     .onTapGesture {
                                         print("Tapped joke with no image \(joke)")
                                     }
