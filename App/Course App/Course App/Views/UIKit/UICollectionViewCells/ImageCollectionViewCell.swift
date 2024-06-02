@@ -4,7 +4,7 @@
 //
 //  Created by macbook on 18.05.2024.
 //
-
+/*
 import UIKit
 
 final class ImageCollectionViewCell: UICollectionViewCell {
@@ -48,3 +48,4 @@ private extension ImageCollectionViewCell {
         ])
     }
 }
+*/

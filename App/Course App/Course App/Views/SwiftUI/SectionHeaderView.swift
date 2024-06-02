@@ -12,7 +12,7 @@ struct SectionHeaderView: View {
     var body: some View {
         Text(title)
             .padding()
-            .textTypeModifier(textType: .h2Title)
+            .textStyle(textType: .sectionTitle)
             .background(.bg)
     }
 }

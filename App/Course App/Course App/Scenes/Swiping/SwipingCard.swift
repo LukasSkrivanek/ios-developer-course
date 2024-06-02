@@ -75,7 +75,7 @@ struct SwipingCard: View {
     // MARK: CardDescription
     private var cardDescription: some View {
         Text(configuration.title)
-            .textTypeModifier(textType: .h1Title)
+            .textStyle(textType: .sectionTitle)
             .padding(10)
             .background(.black.opacity(0.5))
             .cornerRadius(UIConstants.cornerRadius)

@@ -8,7 +8,7 @@ import UIKit
 import Combine
 import SwiftUI
 // swiftlint:disable force_cast
-final class HomeViewController: UIViewController {
+final class CategoriesViewController: UIViewController {
     private lazy var categoriesCollectionView: UICollectionView = UICollectionView(
         frame: .zero,
         collectionViewLayout: UICollectionViewFlowLayout()
@@ -26,7 +26,7 @@ final class HomeViewController: UIViewController {
     }
 }
 // MARK: - UICollectionViewDataSource
-private extension HomeViewController {
+private extension CategoriesViewController {
     func readData() {
         dataProvider.$data.sink { [weak self] data in
             print(data)
@@ -77,7 +77,7 @@ private extension HomeViewController {
     }
 }
 
-extension HomeViewController: UICollectionViewDelegateFlowLayout {
+extension CategoriesViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(
         _ collectionView: UICollectionView,
         layout collectionViewLayout: UICollectionViewLayout,
@@ -94,7 +94,7 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
 }
 
 // MARK: - UICollectionViewDelegate
-extension HomeViewController: UICollectionViewDelegate {
+extension CategoriesViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("I have tapped \(indexPath)")
     }
@@ -105,7 +105,7 @@ extension HomeViewController: UICollectionViewDelegate {
 }
 
 // MARK: - UI setup
-private extension HomeViewController {
+private extension CategoriesViewController {
     func setup() {
         setupCollectionView()
         readData()

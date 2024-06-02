@@ -14,9 +14,9 @@ struct HomeViewSwiftUI: View {
         List {
             ForEach(dataProvider.data) { section in
                 Section(header: Text(section.title)
-                            .foregroundColor(.white)
-                            .padding(.leading, 5)
-                            .padding(.trailing, 5)
+                    .foregroundColor(.white)
+                    .padding(.leading, 5)
+                    .padding(.trailing, 5)
                 ) {
                     VStack {
                         ForEach(section.jokes) { joke in
@@ -49,7 +49,7 @@ struct HomeViewSwiftUI: View {
         }
         .listStyle(PlainListStyle())
         .scrollContentBackground(.hidden)
-        .background(Color.bg) 
+        .background(Color.bg)
     }
     private var imagePanel: some View {
         HStack {
